@@ -238,7 +238,7 @@
                             </div>
                         </div>
 
-                        <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Chinmoy%20Deb%20Nath-%20CV.pdf" download="Chinmoy Deb Nath - CV.pdf" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300">
+                        <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Chinmoy%20Deb%20Nath%20-%20CV.pdf" download="Chinmoy Deb Nath - CV.pdf" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300">
                             Download CV <i class="fas fa-download ml-2"></i>
                         </a>
                     </div>
@@ -392,30 +392,46 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Project Card 1 -->
+                    <!-- Project Card 1: Wind Turbine -->
                     <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <h3 class="text-lg font-semibold text-white">Design and Optimization of Savonius Wind Turbine</h3>
+                        <h3 class="text-lg font-semibold text-white">
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Savonius%20Turbine%20Project.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                                Design and Optimization of Savonius Wind Turbine <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                            </a>
+                        </h3>
                         <p class="text-slate-400 mt-2 text-sm text-justify">
                             Used CFD simulations to design and optimize a Savonius turbine, identifying 130° blade angle as optimal for peak power in low-wind conditions.
                         </p>
                     </div>
-                    <!-- Project Card 2 -->
+                    <!-- Project Card 2: Biosorption -->
                     <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <h3 class="text-lg font-semibold text-white">Biosorption of Copper (II) using Coconut Husk</h3>
+                        <h3 class="text-lg font-semibold text-white">
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/BIOSORPTION%20OF%20CU(II).pdf" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                                Biosorption of Copper (II) using Coconut Husk <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                            </a>
+                        </h3>
                         <p class="text-slate-400 mt-2 text-sm text-justify">
                             Investigated Cu (II) biosorption, identifying optimal pH and kinetics for efficient, eco-friendly heavy metal removal in aqueous systems.
                         </p>
                     </div>
-                    <!-- Project Card 3 -->
+                    <!-- Project Card 3: Bubble Oscillation -->
                     <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <h3 class="text-lg font-semibold text-white">Bubble Oscillation Analysis in Tri-Bubble System</h3>
+                        <h3 class="text-lg font-semibold text-white">
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Tri-Bubble%20Interaction.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                                Bubble Oscillation Analysis in Tri-Bubble System <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                            </a>
+                        </h3>
                         <p class="text-slate-400 mt-2 text-sm text-justify">
                             Analyzed oscillation behavior of three acoustically interacting bubbles in MATLAB (time and frequency domain) to reveal dynamic coupling effects.
                         </p>
                     </div>
-                    <!-- Project Card 4 -->
+                    <!-- Project Card 4: Finite Element -->
                     <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <h3 class="text-lg font-semibold text-white">Finite Element Analysis Convergence</h3>
+                        <h3 class="text-lg font-semibold text-white">
+                            <a href="https://www.coursera.org/account/accomplishments/verify/NAJCXM72GQ92" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                                Finite Element Analysis Convergence <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                            </a>
+                        </h3>
                         <p class="text-slate-400 mt-2 text-sm text-justify">
                             A Coursera project focusing on mesh independence and convergence in finite element analysis.
                         </p>
@@ -786,16 +802,16 @@
                         
                         // Update desktop links
                         navLinks.forEach(link => {
-                            // Don't mark 'dance' as active since it's not in the nav
-                            if (sectionId !== 'dance') {
+                            // Don't mark 'dance' or 'awards' as active since they are not in the top-level nav
+                            if (sectionId !== 'dance' && sectionId !== 'awards') {
                                 link.classList.toggle('active', link.dataset.section === sectionId);
                             }
                         });
                         
                         // Update mobile links
                         mobileNavLinks.forEach(link => {
-                            // Don't mark 'dance' as active since it's not in the nav
-                            if (sectionId !== 'dance') {
+                            // Don't mark 'dance' or 'awards' as active since they are not in the top-level nav
+                            if (sectionId !== 'dance' && sectionId !== 'awards') {
                                 link.classList.toggle('active', link.dataset.section === sectionId);
                             }
                         });
@@ -803,8 +819,10 @@
                 });
             }, observerOptions);
 
-            sections.forEach(section => {
-                if (section) { // Add a check to ensure section exists
+            // Observe all sections and ensure 'education' and 'awards' sections are observed too, 
+            // even if they aren't in the main nav, to prevent JS errors.
+            document.querySelectorAll('section').forEach(section => {
+                if (section) { 
                     observer.observe(section);
                 }
             });
@@ -904,4 +922,3 @@
 </body>
 
 </html>
-
