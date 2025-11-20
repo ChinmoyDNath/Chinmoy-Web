@@ -47,12 +47,12 @@
     </script>
 
     <style>
-        /* Custom styles for the page - DEEPER DARK SKY THEME (Lightened) */
+        /* Custom styles for the page - Lighter Dark Sky Theme */
         body {
             /* Smooth scrolling for anchor links */
             scroll-behavior: smooth;
-            /* Lighter dark background (Slate-900 equivalent) */
-            background-color: #0f172a; 
+            /* Lighter dark background (Slate-800 equivalent) */
+            background-color: #1e293b; 
         }
 
         /* Styling for the active navigation link */
@@ -78,7 +78,7 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #0f172a; /* Custom dark BG (Slate-900) */
+            background: #1e293b; /* Custom lighter dark BG (Slate-800) */
         }
         ::-webkit-scrollbar-thumb {
             background: #475569; /* Slate-600 */
@@ -99,8 +99,8 @@
         }
     </style>
 </head>
-<!-- Body background class updated to Slate-900 equivalent -->
-<body class="bg-slate-900 text-slate-300 font-sans leading-relaxed transition-colors duration-300">
+<!-- Body background class updated to Slate-800 equivalent -->
+<body class="bg-slate-800 text-slate-300 font-sans leading-relaxed transition-colors duration-500">
 
     <!-- Particles.js Container -->
     <div id="particles-js"></div>
@@ -108,8 +108,8 @@
     <!-- ========== HEADER (NAVBAR) ========== -->
     <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <!-- Background changed to Slate-800 with blur for lighter contrast -->
-            <div class="flex items-center justify-between h-16 md:h-20 bg-slate-800/90 backdrop-blur-sm rounded-b-lg md:rounded-lg md:mt-2 px-6 shadow-lg">
+            <!-- Background changed to Slate-700 with blur for contrast -->
+            <div class="flex items-center justify-between h-16 md:h-20 bg-slate-700/90 backdrop-blur-sm rounded-b-lg md:rounded-lg md:mt-2 px-6 shadow-lg">
                 <!-- Logo / Name - Sky Blue Custom for contrast -->
                 <a href="#home" class="text-xl md:text-2xl font-bold text-sky-blue-custom whitespace-nowrap">
                     Chinmoy Deb Nath
@@ -137,15 +137,15 @@
         </nav>
 
         <!-- Mobile Menu - Background and Text color adjusted -->
-        <div id="mobile-menu" class="fixed top-16 left-0 w-full bg-slate-800 shadow-lg md:hidden hidden transition-transform duration-300 ease-in-out">
-            <a href="#home" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="home">Home</a>
-            <a href="#about" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="about">About</a>
-            <a href="#experience" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="experience">Experience</a>
-            <a href="#research" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="research">Research</a>
-            <a href="#projects" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="projects">Projects</a>
-            <a href="#skills" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="skills">Skills</a>
-            <a href="#certifications" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="certifications">Certifications</a>
-            <a href="#contact" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="contact">Contact</a>
+        <div id="mobile-menu" class="fixed top-16 left-0 w-full bg-slate-700 shadow-lg md:hidden hidden transition-transform duration-300 ease-in-out">
+            <a href="#home" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-600" data-section="home">Home</a>
+            <a href="#about" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-600" data-section="about">About</a>
+            <a href="#experience" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-600" data-section="experience">Experience</a>
+            <a href="#research" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-600" data-section="research">Research</a>
+            <a href="#projects" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-600" data-section="projects">Projects</a>
+            <a href="#skills" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-600" data-section="skills">Skills</a>
+            <a href="#certifications" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-600" data-section="certifications">Certifications</a>
+            <a href="#contact" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-600" data-section="contact">Contact</a>
         </div>
     </header>
 
@@ -158,7 +158,7 @@
             <div class="w-full md:w-1/2 text-center md:text-left">
                 <div style="animation: fadeInUp 0.8s ease-out forwards;">
                     <span class="text-xl md:text-2xl font-medium text-sky-blue-custom">Hello, I'm</span>
-                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mt-2 mb-4 text-white">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mt-2 mb-4 text-grey">
                         Chinmoy Deb Nath
                     </h1>
                     <h2 class="text-2xl md:text-4xl font-semibold text-slate-300 mb-8">
@@ -192,7 +192,7 @@
             <div class="w-full md:w-1/2 flex justify-center">
                 <div class="reveal">
                      <!-- Placeholder color changed for dark theme contrast, using custom hex -->
-                     <img src="https://github.com/ChinmoyDNath/Chinmoy-Web/blob/main/Chinmoy.png?raw=true" alt="Chinmoy Deb Nath" class="rounded-full shadow-xl w-3/4 md:w-full max-w-sm mx-auto object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/300x300/87CEEB/0f172a?text=Chinmoy';">
+                     <img src="https://github.com/ChinmoyDNath/Chinmoy-Web/blob/main/Chinmoy.png?raw=true" alt="Chinmoy Deb Nath" class="rounded-full shadow-xl w-3/4 md:w-full max-w-sm mx-auto object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/300x300/87CEEB/1e293b?text=Chinmoy';">
                 </div>
             </div>
         </section>
@@ -237,10 +237,17 @@
                             </div>
                         </div>
 
-                        <!-- CV Download Link - Button color updated -->
-                        <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Chinmoy%20Deb%20Nath-%20CV.pdf" download="Chinmoy Deb Nath - CV.pdf" class="inline-block bg-sky-blue-custom hover:bg-sky-600 text-slate-900 font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300">
-                            Download CV <i class="fas fa-download ml-2"></i>
-                        </a>
+                        <!-- CV and Transcripts Links - Updated to match theme -->
+                        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                            <!-- Curriculum Vitae Button -->
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Chinmoy%20Deb%20Nath-%20CV.pdf" download="Chinmoy Deb Nath - CV.pdf" class="inline-block bg-sky-blue-custom hover:bg-sky-600 text-slate-900 font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300 w-full sm:w-auto text-center">
+                                Curriculum Vitae <i class="fas fa-download ml-2"></i>
+                            </a>
+                            <!-- Academic Transcripts Button - Styled identically to CV -->
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Transcripts.pdf" download="Transcripts.pdf" class="inline-block bg-sky-blue-custom hover:bg-sky-600 text-slate-900 font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300 w-full sm:w-auto text-center">
+                                Academic Transcripts <i class="fas fa-download ml-2"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -252,28 +259,54 @@
                     <p class="text-lg text-slate-400">My academic background.</p>
                 </div>
                 
-                <!-- Card background changed to Slate-800 -->
-                <div class="max-w-2xl mx-auto bg-slate-800 rounded-lg shadow-xl p-8 transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <!-- Icon background changed to slightly lighter slate -->
-                            <div class="w-12 h-12 bg-slate-700 text-sky-blue-custom rounded-full flex items-center justify-center">
-                                <i class="fas fa-graduation-cap text-xl"></i>
+                <div class="max-w-2xl mx-auto space-y-8">
+                    <!-- B.Sc. in Mechanical Engineering (CUET) -->
+                    <div class="bg-slate-700 rounded-lg shadow-xl p-8 transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <!-- Icon background changed to slightly lighter slate -->
+                                <div class="w-12 h-12 bg-slate-600 text-sky-blue-custom rounded-full flex items-center justify-center">
+                                    <i class="fas fa-graduation-cap text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-semibold text-white">B.Sc. in Mechanical Engineering</h3>
+                                <p class="text-sky-blue-custom font-medium mt-1">
+                                    <a href="https://cuet.ac.bd/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                        Chittagong University of Engineering and Technology (CUET)
+                                    </a>
+                                </p>
+                                <p class="text-slate-400 text-sm mt-1">July 2025</p>
+                                <ul class="list-disc list-inside text-slate-300 mt-3 space-y-1">
+                                    <li>CGPA: <strong>3.73 / 4.00</strong></li>
+                                    <li>Last Four Semesters' GPA: <strong>3.87 / 4.00</strong></li>
+                                    <li>Rank: <strong>18<sup>th</sup> out of 180</strong> (Among Top 10%)</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="ml-6">
-                            <h3 class="text-xl font-semibold text-white">B.Sc. in Mechanical Engineering</h3>
-                            <p class="text-sky-blue-custom font-medium mt-1">
-                                <a href="https://cuet.ac.bd/" target="_blank" rel="noopener noreferrer" class="hover:underline">
-                                    Chittagong University of Engineering and Technology (CUET)
-                                </a>
-                            </p>
-                            <p class="text-slate-400 text-sm mt-1">July 2025</p>
-                            <ul class="list-disc list-inside text-slate-300 mt-3 space-y-1">
-                                <li>CGPA: <strong>3.73 / 4.00</strong></li>
-                                <li>Last Four Semesters' GPA: <strong>3.87 / 4.00</strong></li>
-                                <li>Rank: <strong>18<sup>th</sup> out of 180</strong> (Among Top 10%)</li>
-                            </ul>
+                    </div>
+
+                    <!-- Secondary & Higher Secondary Education (Rangpur Cadet College) -->
+                    <div class="bg-slate-700 rounded-lg shadow-xl p-8 transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-slate-600 text-sky-blue-custom rounded-full flex items-center justify-center">
+                                    <i class="fas fa-school text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-semibold text-white">Secondary & Higher Secondary Education</h3>
+                                <p class="text-sky-blue-custom font-medium mt-1">
+                                    <a href="https://cadetcollegeofrangpur.net" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                        Rangpur Cadet College (CCR), Rangpur, Bangladesh
+                                    </a>
+                                </p>
+                                <p class="text-slate-400 text-sm mt-1">2013 - 2019</p>
+                                <ul class="list-disc list-inside text-slate-300 mt-3 space-y-1">
+                                    <li>Higher Secondary Certificate (HSC) GPA: <strong>5.00 / 5.00</strong> (Science) – Board Position: 9th (2019)</li>
+                                    <li>Secondary School Certificate (SSC) GPA: <strong>5.00 / 5.00</strong> (Science) – With Scholarship (2017)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,11 +319,12 @@
                     <p class="text-lg text-slate-400">My relevant work and research roles.</p>
                 </div>
 
+                <!-- Timeline border color maintained -->
                 <div class="relative max-w-3xl mx-auto border-l-2 border-sky-blue-custom pl-8 space-y-12">
                     <!-- Timeline Item 1 -->
                     <div class="relative reveal">
                         <!-- Dot border changed to new body background color -->
-                        <div class="absolute -left-10 top-0 w-4 h-4 bg-sky-blue-custom rounded-full border-4 border-slate-900"></div>
+                        <div class="absolute -left-10 top-0 w-4 h-4 bg-sky-blue-custom rounded-full border-4 border-slate-800"></div>
                         <h3 class="text-xl font-semibold text-white">Adjunct Lecturer, Dept. of ME</h3>
                         <p class="font-medium text-slate-300 mt-1">
                             <a href="https://akmu.edu.bd/" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -299,7 +333,7 @@
                         </p>
                         <p class="text-sm text-slate-400 mt-1">Oct 2025 - Present</p>
                         <p class="text-slate-300 mt-3">
-                            <strong>Courses Taught:</strong>
+                            <strong>Courses:</strong>
                             <ul class="list-disc list-inside ml-4 mt-2 text-slate-300">
                                 <li>Engineering Mechanics-II (MEC 2203)</li>
                                 <li>Engineering Mechanics-II Sessional (MEC 2204)</li>
@@ -313,7 +347,7 @@
                     <!-- Timeline Item 2 -->
                     <div class="relative reveal">
                         <!-- Dot border changed to new body background color -->
-                        <div class="absolute -left-10 top-0 w-4 h-4 bg-sky-blue-custom rounded-full border-4 border-slate-900"></div>
+                        <div class="absolute -left-10 top-0 w-4 h-4 bg-sky-blue-custom rounded-full border-4 border-slate-800"></div>
                         <h3 class="text-xl font-semibold text-white">Graduate Research Assistant</h3>
                         <p class="font-medium text-slate-300 mt-1">
                             <a href="https://cuet.ac.bd/" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -338,7 +372,7 @@
                 <!-- Changed to a single column layout -->
                 <div class="grid grid-cols-1 gap-8 mb-16 max-w-3xl mx-auto">
                     <!-- Research Item 1: BANBEIS Project (GRA) - REVERSED HIERARCHY -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <!-- Metadata line at the top (plain text) -->
                         <span class="text-sm font-medium text-sky-blue-custom block mb-2">
                             BANBEIS Project by Ministry of Education, Bangladesh. | Jul 2025 - Present
@@ -354,7 +388,7 @@
                         </p>
                     </div>
                     <!-- Research Item 2: Undergraduate Thesis -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <span class="text-sm font-medium text-sky-blue-custom block mb-2">Undergraduate Thesis | 2025</span>
                         <h3 class="text-lg font-semibold text-white">
                             <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Thesis.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
@@ -366,7 +400,7 @@
                         </p>
                     </div>
                     <!-- Research Item 3: Manuscript ready to submit -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <span class="text-sm font-medium text-sky-blue-custom block mb-2">Chinmoy Deb Nath, Md. Mamunur Roshid. (Manuscript ready to submit)</span>
                         <h3 class="text-lg font-semibold text-white">
                             <a href="https://www.linkedin.com/posts/chinmoy-deb-nath-5829b4276_multiphaseabrflow-bubbleabrdynamics-cfd-activity-7393180080010805249-FyN7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENsZTIBxrt9inUkN4MVTzrOvNpUsco0NN8" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
@@ -378,7 +412,7 @@
                         </p>
                     </div>
                     <!-- Research Item 4: ICMERE 2025 (Accepted) -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <span class="text-sm font-medium text-sky-blue-custom block mb-2">Abu Bakar, Sajal Chandra Banik, Chinmoy Deb Nath (Accepted in ICMERE 2025). | 2025</span>
                         <h3 class="text-lg font-semibold text-white">
                             A comparative analysis among Balsa, Pine, and Gamari as a potential piezoelectric material.
@@ -392,14 +426,14 @@
                 <div class="text-center mt-12 reveal">
                     <h3 class="text-2xl font-semibold mb-6 text-white">Research Interests</h3>
                     <div class="flex flex-wrap justify-center gap-3">
-                        <!-- Interest tags background changed to Slate-700, text color updated -->
-                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Multiphase Flow</span>
-                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Bubble Dynamics</span>
-                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Computational Fluid Dynamics</span>
-                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Bubble Acoustics</span>
-                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Heat Transfer</span>
-                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Aerodynamics</span>
-                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Bio-based Sustainable Energy</span>
+                        <!-- Interest tags background changed to Slate-600 -->
+                        <span class="bg-slate-600 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-500">Multiphase Flow</span>
+                        <span class="bg-slate-600 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-500">Bubble Dynamics</span>
+                        <span class="bg-slate-600 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-500">Computational Fluid Dynamics</span>
+                        <span class="bg-slate-600 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-500">Bubble Acoustics</span>
+                        <span class="bg-slate-600 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-500">Heat Transfer</span>
+                        <span class="bg-slate-600 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-500">Aerodynamics</span>
+                        <span class="bg-slate-600 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-500">Bio-based Sustainable Energy</span>
                     </div>
                 </div>
             </section>
@@ -413,7 +447,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Project Card 1: Wind Turbine -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <h3 class="text-lg font-semibold text-white">
                             <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Savonius%20Turbine%20Project.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
                                 Design and Optimization of Savonius Wind Turbine <i class="fas fa-external-link-alt text-xs ml-1"></i>
@@ -424,7 +458,7 @@
                         </p>
                     </div>
                     <!-- Project Card 2: Biosorption -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <h3 class="text-lg font-semibold text-white">
                             <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/BIOSORPTION%20OF%20CU(II).pdf" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
                                 Biosorption of Copper (II) using Coconut Husk <i class="fas fa-external-link-alt text-xs ml-1"></i>
@@ -435,7 +469,7 @@
                         </p>
                     </div>
                     <!-- Project Card 3: Bubble Oscillation -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <h3 class="text-lg font-semibold text-white">
                             <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Tri-Bubble%20Interaction.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
                                 Bubble Oscillation Analysis in Tri-Bubble System <i class="fas fa-external-link-alt text-xs ml-1"></i>
@@ -446,7 +480,7 @@
                         </p>
                     </div>
                     <!-- Project Card 4: Finite Element -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <h3 class="text-lg font-semibold text-white">
                             <a href="https://www.coursera.org/account/accomplishments/verify/NAJCXM72GQ92" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
                                 Finite Element Analysis Convergence <i class="fas fa-external-link-alt text-xs ml-1"></i>
@@ -468,7 +502,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Skill Category 1 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-cogs text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">Simulation Software</h3>
@@ -479,7 +513,7 @@
                         </ul>
                     </div>
                     <!-- Skill Category 2 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-code text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">Programming Languages</h3>
@@ -493,7 +527,7 @@
                         </ul>
                     </div>
                     <!-- Skill Category 3 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-drafting-compass text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">CAD & Processing</h3>
@@ -506,7 +540,7 @@
                         </ul>
                     </div>
                     <!-- Skill Category 4 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-chart-bar text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">Scientific Visualization</h3>
@@ -516,7 +550,7 @@
                         </ul>
                     </div>
                     <!-- Skill Category 5 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-file-alt text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">Basic Software</h3>
@@ -538,7 +572,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Certification Card 1 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <span class="text-sm font-medium text-sky-blue-custom">ICT Division, Bangladesh</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">
                             Hands on Training Course for CNC & 3D Printing for Industrial Automation
@@ -551,7 +585,7 @@
                         </a>
                     </div>
                     <!-- Certification Card 2 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <span class="text-sm font-medium text-sky-blue-custom">Rutgers the State University of New Jersey</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">Supply Chain Management Specialization</h3>
                         <p class="text-slate-300 mt-2 text-sm text-justify">
@@ -562,7 +596,7 @@
                         </a>
                     </div>
                     <!-- Certification Card 3 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <span class="text-sm font-medium text-sky-blue-custom">Coursera</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">Mechanical Engineering Design and Manufacturing with Fusion 360</h3>
                         <p class="text-slate-300 mt-2 text-sm text-justify">
@@ -573,7 +607,7 @@
                         </a>
                     </div>
                     <!-- Certification Card 4 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <span class="text-sm font-medium text-sky-blue-custom">Coursera</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">Modeling and Design for Mechanical Engineers with Autodesk Fusion 360</h3>
                         <p class="text-slate-300 mt-2 text-sm text-justify">
@@ -584,7 +618,7 @@
                         </a>
                     </div>
                     <!-- Certification Card 5 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                    <div class="bg-slate-700 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <span class="text-sm font-medium text-sky-blue-custom">Georgia Institute of Technology (Coursera)</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">Machine Design Part I</h3>
                         <p class="text-slate-300 mt-2 text-sm text-justify">
@@ -745,7 +779,7 @@
     </main>
 
     <!-- ========== FOOTER - Background changed to dark slate-800 ========== -->
-    <footer class="bg-slate-800 mt-24">
+    <footer class="bg-slate-700 mt-24">
         <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-center text-slate-500">
             <div class="flex justify-center space-x-6 mb-4">
                 <a href="https://www.linkedin.com/in/chinmoy-deb-nath-5829b4276" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-blue-custom transition-colors" title="LinkedIn">
@@ -772,14 +806,14 @@
             if (typeof Typed !== 'undefined') {
                 new Typed('#typed', {
                     strings: [
-                        'a Mechanical Engineer.',
                         'a Researcher.',
-                        'a CFD Enthusiast.',
-                        'an Adjunct Lecturer.'
+                        'an Educator.',
+                        'a Learner.',
+                        'a Mechanical Engineer.'
                     ],
-                    typeSpeed: 50,
-                    backSpeed: 30,
-                    backDelay: 2000,
+                    typeSpeed: 100,
+                    backSpeed: 40,
+                    backDelay: 500,
                     loop: true,
                     smartBackspace: true,
                 });
