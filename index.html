@@ -28,6 +28,9 @@
                     fontFamily: {
                         'sans': ['Inter', 'sans-serif'],
                     },
+                    colors: {
+                        'sky-blue-custom': '#87CEEB', // Custom Sky Blue accent
+                    },
                     animation: {
                         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
                         'bounce-slow': 'bounce 2s infinite',
@@ -44,26 +47,17 @@
     </script>
 
     <style>
-        /* Custom styles for the page */
+        /* Custom styles for the page - DEEPER DARK SKY THEME (Lightened) */
         body {
             /* Smooth scrolling for anchor links */
             scroll-behavior: smooth;
-            /* Dynamic background - Dark Theme (One shade lighter) */
-            background: linear-gradient(-45deg, #1e293b, #334155, #1e293b, #2a3a5a);
-            background-size: 400% 400%;
-            animation: gradientFlow 15s ease infinite;
-        }
-
-        /* Dynamic background animation */
-        @keyframes gradientFlow {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            /* Lighter dark background (Slate-900 equivalent) */
+            background-color: #0f172a; 
         }
 
         /* Styling for the active navigation link */
         .nav-link.active {
-            color: #60a5fa; /* Blue-400 */
+            color: #87CEEB; /* Sky Blue Custom */
         }
 
         /* Base class for scroll-reveal animations */
@@ -84,7 +78,7 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #1e293b; /* Slate-800 */
+            background: #0f172a; /* Custom dark BG (Slate-900) */
         }
         ::-webkit-scrollbar-thumb {
             background: #475569; /* Slate-600 */
@@ -105,6 +99,7 @@
         }
     </style>
 </head>
+<!-- Body background class updated to Slate-900 equivalent -->
 <body class="bg-slate-900 text-slate-300 font-sans leading-relaxed transition-colors duration-300">
 
     <!-- Particles.js Container -->
@@ -113,34 +108,35 @@
     <!-- ========== HEADER (NAVBAR) ========== -->
     <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 md:h-20 bg-slate-900/80 backdrop-blur-sm rounded-b-lg md:rounded-lg md:mt-2 px-6 shadow-md">
-                <!-- Logo / Name -->
-                <a href="#home" class="text-xl md:text-2xl font-bold text-blue-400 whitespace-nowrap">
+            <!-- Background changed to Slate-800 with blur for lighter contrast -->
+            <div class="flex items-center justify-between h-16 md:h-20 bg-slate-800/90 backdrop-blur-sm rounded-b-lg md:rounded-lg md:mt-2 px-6 shadow-lg">
+                <!-- Logo / Name - Sky Blue Custom for contrast -->
+                <a href="#home" class="text-xl md:text-2xl font-bold text-sky-blue-custom whitespace-nowrap">
                     Chinmoy Deb Nath
                 </a>
 
-                <!-- Desktop Navigation -->
+                <!-- Desktop Navigation - Text color adjusted -->
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="#home" class="nav-link text-slate-300 hover:text-blue-400 font-medium transition-colors" data-section="home">Home</a>
-                    <a href="#about" class="nav-link text-slate-300 hover:text-blue-400 font-medium transition-colors" data-section="about">About</a>
-                    <a href="#experience" class="nav-link text-slate-300 hover:text-blue-400 font-medium transition-colors" data-section="experience">Experience</a>
-                    <a href="#research" class="nav-link text-slate-300 hover:text-blue-400 font-medium transition-colors" data-section="research">Research</a>
-                    <a href="#projects" class="nav-link text-slate-300 hover:text-blue-400 font-medium transition-colors" data-section="projects">Projects</a>
-                    <a href="#skills" class="nav-link text-slate-300 hover:text-blue-400 font-medium transition-colors" data-section="skills">Skills</a>
-                    <a href="#certifications" class="nav-link text-slate-300 hover:text-blue-400 font-medium transition-colors" data-section="certifications">Certifications</a>
-                    <a href="#contact" class="nav-link text-slate-300 hover:text-blue-400 font-medium transition-colors" data-section="contact">Contact</a>
+                    <a href="#home" class="nav-link text-slate-300 hover:text-sky-blue-custom font-medium transition-colors" data-section="home">Home</a>
+                    <a href="#about" class="nav-link text-slate-300 hover:text-sky-blue-custom font-medium transition-colors" data-section="about">About</a>
+                    <a href="#experience" class="nav-link text-slate-300 hover:text-sky-blue-custom font-medium transition-colors" data-section="experience">Experience</a>
+                    <a href="#research" class="nav-link text-slate-300 hover:text-sky-blue-custom font-medium transition-colors" data-section="research">Research</a>
+                    <a href="#projects" class="nav-link text-slate-300 hover:text-sky-blue-custom font-medium transition-colors" data-section="projects">Projects</a>
+                    <a href="#skills" class="nav-link text-slate-300 hover:text-sky-blue-custom font-medium transition-colors" data-section="skills">Skills</a>
+                    <a href="#certifications" class="nav-link text-slate-300 hover:text-sky-blue-custom font-medium transition-colors" data-section="certifications">Certifications</a>
+                    <a href="#contact" class="nav-link text-slate-300 hover:text-sky-blue-custom font-medium transition-colors" data-section="contact">Contact</a>
                 </div>
 
-                <!-- Mobile Menu Button -->
+                <!-- Mobile Menu Button - Text color adjusted -->
                 <div class="flex items-center space-x-4">
-                    <button id="mobile-menu-button" class="md:hidden text-slate-300 hover:text-blue-400 transition-colors">
+                    <button id="mobile-menu-button" class="md:hidden text-slate-300 hover:text-sky-blue-custom transition-colors">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </nav>
 
-        <!-- Mobile Menu -->
+        <!-- Mobile Menu - Background and Text color adjusted -->
         <div id="mobile-menu" class="fixed top-16 left-0 w-full bg-slate-800 shadow-lg md:hidden hidden transition-transform duration-300 ease-in-out">
             <a href="#home" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="home">Home</a>
             <a href="#about" class="nav-link-mobile block px-6 py-3 text-slate-200 hover:bg-slate-700" data-section="about">About</a>
@@ -156,28 +152,29 @@
     <!-- ========== MAIN CONTENT ========== -->
     <main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <!-- ========== SECTION: HOME ========== -->
+        <!-- ========== SECTION: HOME - Updated for Symmetry ========== -->
         <section id="home" class="min-h-screen flex flex-col md:flex-row items-center pt-32 md:pt-28 gap-10">
-            <!-- Text Content -->
-            <div class="w-full md:w-3/5 text-center md:text-left">
+            <!-- Text Content (Now w-1/2 on desktop) -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
                 <div style="animation: fadeInUp 0.8s ease-out forwards;">
-                    <span class="text-xl md:text-2xl font-medium text-blue-400">Hello, I'm</span>
+                    <span class="text-xl md:text-2xl font-medium text-sky-blue-custom">Hello, I'm</span>
                     <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mt-2 mb-4 text-white">
                         Chinmoy Deb Nath
                     </h1>
                     <h2 class="text-2xl md:text-4xl font-semibold text-slate-300 mb-8">
-                        I'm <span id="typed" class="text-blue-400"></span>
+                        I'm <span id="typed" class="text-sky-blue-custom"></span>
                     </h2>
+                    <!-- HOME INTRO TEXT -->
                     <p class="max-w-2xl mx-auto md:mx-0 text-base md:text-lg text-slate-400 mb-8 text-justify">
-                        A Mechanical Engineering graduate from CUET, passionate about Multiphase Flow, Bubble Dynamics, Computational Fluid Dynamics, and Heat Transfer. Currently working as a Graduate Research Assistant and Adjunct Lecturer.
+                        A Mechanical Engineering graduate from CUET, passionate about Multiphase Flow, Bubble Dynamics, Computational Fluid Dynamics, Aerodynamics and Heat Transfer. Currently working as a Graduate Research Assistant and Adjunct Lecturer.
                     </p>
                     
                     <!-- Social Links -->
                     <div class="flex items-center justify-center md:justify-start space-x-6 mb-12">
-                        <a href="https://www.linkedin.com/in/chinmoy-deb-nath-5829b4276" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-colors" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/chinmoy-deb-nath-5829b4276" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-blue-custom transition-colors" title="LinkedIn">
                             <i class="fab fa-linkedin-in text-2xl"></i>
                         </a>
-                        <a href="mailto:chinmoydebnathbishal@gmail.com" class="text-slate-400 hover:text-blue-400 transition-colors" title="Email">
+                        <a href="mailto:chinmoydebnathbishal@gmail.com" class="text-slate-400 hover:text-sky-blue-custom transition-colors" title="Email">
                             <i class="fas fa-envelope text-2xl"></i>
                         </a>
                         <!-- Add more social links as needed -->
@@ -191,11 +188,11 @@
                     </div>
                 </a>
             </div>
-            <!-- Image -->
-            <div class="w-full md:w-2/5 flex justify-center md:justify-start">
+            <!-- Image (Updated for round shape) -->
+            <div class="w-full md:w-1/2 flex justify-center">
                 <div class="reveal">
-                     <!-- Image src updated to "Chinmoy.jpg" and placeholder updated for dark theme -->
-                     <img src="https://github.com/ChinmoyDNath/Chinmoy-Web/blob/main/Chinmoy.png?raw=true" alt="Chinmoy Deb Nath" class="rounded-lg shadow-xl w-3/4 md:w-full max-w-sm mx-auto object-cover aspect-[300/350]" onerror="this.onerror=null;this.src='https://placehold.co/300x350/60a5fa/0f172a?text=Chinmoy';">
+                     <!-- Placeholder color changed for dark theme contrast, using custom hex -->
+                     <img src="https://github.com/ChinmoyDNath/Chinmoy-Web/blob/main/Chinmoy.png?raw=true" alt="Chinmoy Deb Nath" class="rounded-full shadow-xl w-3/4 md:w-full max-w-sm mx-auto object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/300x300/87CEEB/0f172a?text=Chinmoy';">
                 </div>
             </div>
         </section>
@@ -217,29 +214,31 @@
                         <h3 class="text-2xl font-semibold text-white mb-4">
                             Mechanical Engineer & Researcher
                         </h3>
+                        <!-- UPDATED ABOUT TEXT (Heat Transfer capitalized) -->
                         <p class="text-slate-400 mb-6 leading-relaxed text-justify">
-                            My journey in mechanical engineering started at Chittagong University of Engineering and Technology (CUET), where I graduated in the top 10% of my class. I've always been pulled toward the complex puzzles of fluid behavior and heat transfer, which is what led me to specialize in Computational Fluid Dynamics (CFD) and multiphase flow.
+                            My journey in mechanical engineering started at Chittagong University of Engineering and Technology (CUET), where I graduated in the top 10% of my class. I’ve always been drawn to the complex puzzles of fluid behavior, multiphase flow, Bubble Dynamics, and Computational Fluid Dynamics (CFD) which led me to specialize in Heat Transfer and Aerodynamics.
                             <br><br>
                             Now, I'm putting that focus into practice every day both in my research at CUET's CFD lab, and in the classroom as an Adjunct Lecturer, where I get to share these concepts with the next generation of engineers.
                         </p>
 
                         <div class="flex flex-col items-center space-y-4 mb-8">
                             <div class="flex items-center space-x-3">
-                                <i class="fas fa-envelope text-blue-400 w-5 text-center"></i>
-                                <a href="mailto:chinmoydebnathbishal@gmail.com" class="text-slate-300 hover:text-blue-400 transition-colors">chinmoydebnathbishal@gmail.com</a>
+                                <i class="fas fa-envelope text-sky-blue-custom w-5 text-center"></i>
+                                <!-- Text color adjusted -->
+                                <a href="mailto:chinmoydebnathbishal@gmail.com" class="text-slate-300 hover:text-sky-blue-custom transition-colors">chinmoydebnathbishal@gmail.com</a>
                             </div>
                             <div class="flex items-center space-x-3">
-                                <i class="fas fa-phone text-blue-400 w-5 text-center"></i>
+                                <i class="fas fa-phone text-sky-blue-custom w-5 text-center"></i>
                                 <span class="text-slate-300">+8801783228682</span>
                             </div>
                             <div class="flex items-center space-x-3">
-                                <i class="fas fa-map-marker-alt text-blue-400 w-5 text-center"></i>
+                                <i class="fas fa-map-marker-alt text-sky-blue-custom w-5 text-center"></i>
                                 <span class="text-slate-300">Thakurgaon, Bangladesh</span>
                             </div>
                         </div>
 
-                        <!-- CV Download Link -->
-                        <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Chinmoy%20Deb%20Nath-%20CV.pdf" download="Chinmoy Deb Nath - CV.pdf" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300">
+                        <!-- CV Download Link - Button color updated -->
+                        <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Chinmoy%20Deb%20Nath-%20CV.pdf" download="Chinmoy Deb Nath - CV.pdf" class="inline-block bg-sky-blue-custom hover:bg-sky-600 text-slate-900 font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300">
                             Download CV <i class="fas fa-download ml-2"></i>
                         </a>
                     </div>
@@ -253,22 +252,24 @@
                     <p class="text-lg text-slate-400">My academic background.</p>
                 </div>
                 
-                <div class="max-w-2xl mx-auto bg-slate-800 rounded-lg shadow-xl p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                <!-- Card background changed to Slate-800 -->
+                <div class="max-w-2xl mx-auto bg-slate-800 rounded-lg shadow-xl p-8 transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-slate-700 text-blue-400 rounded-full flex items-center justify-center">
+                            <!-- Icon background changed to slightly lighter slate -->
+                            <div class="w-12 h-12 bg-slate-700 text-sky-blue-custom rounded-full flex items-center justify-center">
                                 <i class="fas fa-graduation-cap text-xl"></i>
                             </div>
                         </div>
                         <div class="ml-6">
                             <h3 class="text-xl font-semibold text-white">B.Sc. in Mechanical Engineering</h3>
-                            <p class="text-blue-400 font-medium mt-1">
+                            <p class="text-sky-blue-custom font-medium mt-1">
                                 <a href="https://cuet.ac.bd/" target="_blank" rel="noopener noreferrer" class="hover:underline">
                                     Chittagong University of Engineering and Technology (CUET)
                                 </a>
                             </p>
-                            <p class="text-slate-500 text-sm mt-1">July 2025</p>
-                            <ul class="list-disc list-inside text-slate-400 mt-3 space-y-1">
+                            <p class="text-slate-400 text-sm mt-1">July 2025</p>
+                            <ul class="list-disc list-inside text-slate-300 mt-3 space-y-1">
                                 <li>CGPA: <strong>3.73 / 4.00</strong></li>
                                 <li>Last Four Semesters' GPA: <strong>3.87 / 4.00</strong></li>
                                 <li>Rank: <strong>18<sup>th</sup> out of 180</strong> (Among Top 10%)</li>
@@ -285,20 +286,21 @@
                     <p class="text-lg text-slate-400">My relevant work and research roles.</p>
                 </div>
 
-                <div class="relative max-w-3xl mx-auto border-l-2 border-blue-700 pl-8 space-y-12">
+                <div class="relative max-w-3xl mx-auto border-l-2 border-sky-blue-custom pl-8 space-y-12">
                     <!-- Timeline Item 1 -->
                     <div class="relative reveal">
-                        <div class="absolute -left-10 top-0 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900"></div>
+                        <!-- Dot border changed to new body background color -->
+                        <div class="absolute -left-10 top-0 w-4 h-4 bg-sky-blue-custom rounded-full border-4 border-slate-900"></div>
                         <h3 class="text-xl font-semibold text-white">Adjunct Lecturer, Dept. of ME</h3>
                         <p class="font-medium text-slate-300 mt-1">
                             <a href="https://akmu.edu.bd/" target="_blank" rel="noopener noreferrer" class="hover:underline">
                                 Anwer Khan Modern University
                             </a>
                         </p>
-                        <p class="text-sm text-slate-500 mt-1">Oct 2025 - Present</p>
-                        <p class="text-slate-400 mt-3">
+                        <p class="text-sm text-slate-400 mt-1">Oct 2025 - Present</p>
+                        <p class="text-slate-300 mt-3">
                             <strong>Courses Taught:</strong>
-                            <ul class="list-disc list-inside ml-4 mt-2 text-slate-400">
+                            <ul class="list-disc list-inside ml-4 mt-2 text-slate-300">
                                 <li>Engineering Mechanics-II (MEC 2203)</li>
                                 <li>Engineering Mechanics-II Sessional (MEC 2204)</li>
                                 <li>Design of Machine Elements-I (MEC 3107)</li>
@@ -310,63 +312,79 @@
                     </div>
                     <!-- Timeline Item 2 -->
                     <div class="relative reveal">
-                        <div class="absolute -left-10 top-0 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900"></div>
+                        <!-- Dot border changed to new body background color -->
+                        <div class="absolute -left-10 top-0 w-4 h-4 bg-sky-blue-custom rounded-full border-4 border-slate-900"></div>
                         <h3 class="text-xl font-semibold text-white">Graduate Research Assistant</h3>
                         <p class="font-medium text-slate-300 mt-1">
                             <a href="https://cuet.ac.bd/" target="_blank" rel="noopener noreferrer" class="hover:underline">
                                 Chittagong University of Engineering and Technology
                             </a>
                         </p>
-                        <p class="text-sm text-slate-500 mt-1">Jul 2025 - Present</p>
-                        <p class="text-slate-400 mt-3 text-justify">
+                        <p class="text-sm text-slate-400 mt-1">Jul 2025 - Present</p>
+                        <p class="text-slate-300 mt-3 text-justify">
                             Working in the Computational Fluid Dynamics (CFD) Lab as part of a BANBEIS Project. My research involves investigating gas bubble splitting and lodging dynamics in patient-specific bifurcating micro-vessels using the Volume of Fluid (VOF) Model to advance embolotherapy strategies.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <!-- ========== SECTION: RESEARCH ========== -->
+            <!-- ========== SECTION: RESEARCH (FINALIZED SINGLE COLUMN) ========== -->
             <section id="research" class="pt-24">
                 <div class="text-center mb-12 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold mb-3 text-white">Research & Publications</h2>
                     <p class="text-lg text-slate-400">My contributions to the field.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    <!-- Research Item 1 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">BANBEIS Project (GRA) | Jul 2025 - Present</span>
-                        <h3 class="text-lg font-semibold mt-2 text-white">Gas Bubble Dynamics in Micro-vessels</h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
-                            Investigating gas bubble splitting and lodging in patient-specific bifurcating micro-vessels using the Volume of Fluid (VOF) Model for embolotherapy strategies.
-                        </p>
-                    </div>
-                    <!-- Research Item 2 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">Undergraduate Thesis | 2025</span>
-                        <h3 class="text-lg font-semibold mt-2 text-white">
-                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Thesis.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
-                                Perfluorocarbon Gas Bubble Dynamics <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                <!-- Changed to a single column layout -->
+                <div class="grid grid-cols-1 gap-8 mb-16 max-w-3xl mx-auto">
+                    <!-- Research Item 1: BANBEIS Project (GRA) - REVERSED HIERARCHY -->
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <!-- Metadata line at the top (plain text) -->
+                        <span class="text-sm font-medium text-sky-blue-custom block mb-2">
+                            BANBEIS Project by Ministry of Education, Bangladesh. | Jul 2025 - Present
+                        </span>
+                        <!-- Title is now hyperlinked -->
+                        <h3 class="text-lg font-semibold text-white">
+                            <a href="https://www.linkedin.com/posts/chinmoy-deb-nath-5829b4276_multiphaseabrflow-activity-7396905704827150336-GD-e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENsZTIBxrt9inUkN4MVTzrOvNpUsco0NN8" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
+                                Graduate Research Assistant Project. <i class="fas fa-external-link-alt text-xs ml-1"></i>
                             </a>
                         </h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
+                            Investigating gas bubble splitting and lodging dynamics in patient-specific bifurcating micro-vessels using Volume of Fluid Model for advanced understanding and design of embolotherapy strategies.
+                        </p>
+                    </div>
+                    <!-- Research Item 2: Undergraduate Thesis -->
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <span class="text-sm font-medium text-sky-blue-custom block mb-2">Undergraduate Thesis | 2025</span>
+                        <h3 class="text-lg font-semibold text-white">
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Thesis.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
+                                Computational Investigation of Perfluorocarbon Gas Bubble Dynamics in Three-Dimensional Bifurcating Arteries. <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                            </a>
+                        </h3>
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Explored the impact of bifurcation geometry and non-Newtonian blood rheology on splitting behavior relevant to gas embolotherapy.
                         </p>
                     </div>
-                    <!-- Research Item 3 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">Manuscript</span>
-                        <h3 class="text-lg font-semibold mt-2 text-white">Roll-Induced Variations in Bubble Splitting</h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
-                            Investigated vessel orientation's influence on bubble dynamics in patient-specific arterial geometries using ANSYS Fluent, identifying critical Capillary and Bond Numbers.
+                    <!-- Research Item 3: Manuscript ready to submit -->
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <span class="text-sm font-medium text-sky-blue-custom block mb-2">Chinmoy Deb Nath, Md. Mamunur Roshid. (Manuscript ready to submit)</span>
+                        <h3 class="text-lg font-semibold text-white">
+                            <a href="https://www.linkedin.com/posts/chinmoy-deb-nath-5829b4276_multiphaseabrflow-bubbleabrdynamics-cfd-activity-7393180080010805249-FyN7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENsZTIBxrt9inUkN4MVTzrOvNpUsco0NN8" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
+                                Roll-Induced Variations in Bubble Splitting Dynamics within Patient-Specific Arterial Networks. <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                            </a>
+                        </h3>
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
+                            Investigated the influence of vessel orientation on bubble splitting and reversal dynamics in patient-specific arterial geometries using ANSYS Fluent. Identified critical Capillary and Bond Numbers dictating bubble behavior under varying roll angles.
                         </p>
                     </div>
-                    <!-- Research Item 4 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">ICMERE 2025 (Accepted)</span>
-                        <h3 class="text-lg font-semibold mt-2 text-white">Comparative Analysis of Piezoelectric Materials</h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
-                            Found Balsa wood to produce the highest voltage output (300.52 mV at 1 kg load), linking performance to its low density and porous structure.
+                    <!-- Research Item 4: ICMERE 2025 (Accepted) -->
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <span class="text-sm font-medium text-sky-blue-custom block mb-2">Abu Bakar, Sajal Chandra Banik, Chinmoy Deb Nath (Accepted in ICMERE 2025). | 2025</span>
+                        <h3 class="text-lg font-semibold text-white">
+                            A comparative analysis among Balsa, Pine, and Gamari as a potential piezoelectric material.
+                        </h3>
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
+                            Found Balsa to produce the highest voltage output (300.52 mV at 1 kg load), with enhanced performance linked to its low density, high compressibility, and porous structure.
                         </p>
                     </div>
                 </div>
@@ -374,13 +392,14 @@
                 <div class="text-center mt-12 reveal">
                     <h3 class="text-2xl font-semibold mb-6 text-white">Research Interests</h3>
                     <div class="flex flex-wrap justify-center gap-3">
-                        <span class="bg-slate-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Multiphase Flow</span>
-                        <span class="bg-slate-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Bubble Dynamics</span>
-                        <span class="bg-slate-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Computational Fluid Dynamics</span>
-                        <span class="bg-slate-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Bubble Acoustics</span>
-                        <span class="bg-slate-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Heat Transfer</span>
-                        <span class="bg-slate-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Aerodynamics</span>
-                        <span class="bg-slate-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Bio-based Sustainable Energy</span>
+                        <!-- Interest tags background changed to Slate-700, text color updated -->
+                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Multiphase Flow</span>
+                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Bubble Dynamics</span>
+                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Computational Fluid Dynamics</span>
+                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Bubble Acoustics</span>
+                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Heat Transfer</span>
+                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Aerodynamics</span>
+                        <span class="bg-slate-700 text-sky-blue-custom text-sm font-medium px-4 py-2 rounded-full border border-slate-600">Bio-based Sustainable Energy</span>
                     </div>
                 </div>
             </section>
@@ -394,46 +413,46 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Project Card 1: Wind Turbine -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <h3 class="text-lg font-semibold text-white">
-                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Savonius%20Turbine%20Project.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Savonius%20Turbine%20Project.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
                                 Design and Optimization of Savonius Wind Turbine <i class="fas fa-external-link-alt text-xs ml-1"></i>
                             </a>
                         </h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Used CFD simulations to design and optimize a Savonius turbine, identifying 130° blade angle as optimal for peak power in low-wind conditions.
                         </p>
                     </div>
                     <!-- Project Card 2: Biosorption -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <h3 class="text-lg font-semibold text-white">
-                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/BIOSORPTION%20OF%20CU(II).pdf" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/BIOSORPTION%20OF%20CU(II).pdf" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
                                 Biosorption of Copper (II) using Coconut Husk <i class="fas fa-external-link-alt text-xs ml-1"></i>
                             </a>
                         </h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Investigated Cu (II) biosorption, identifying optimal pH and kinetics for efficient, eco-friendly heavy metal removal in aqueous systems.
                         </p>
                     </div>
                     <!-- Project Card 3: Bubble Oscillation -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <h3 class="text-lg font-semibold text-white">
-                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Tri-Bubble%20Interaction.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                            <a href="https://github.com/ChinmoyDNath/Chinmoy-Web/raw/main/Tri-Bubble%20Interaction.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
                                 Bubble Oscillation Analysis in Tri-Bubble System <i class="fas fa-external-link-alt text-xs ml-1"></i>
                             </a>
                         </h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Analyzed oscillation behavior of three acoustically interacting bubbles in MATLAB (time and frequency domain) to reveal dynamic coupling effects.
                         </p>
                     </div>
                     <!-- Project Card 4: Finite Element -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <h3 class="text-lg font-semibold text-white">
-                            <a href="https://www.coursera.org/account/accomplishments/verify/NAJCXM72GQ92" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                            <a href="https://www.coursera.org/account/accomplishments/verify/NAJCXM72GQ92" target="_blank" rel="noopener noreferrer" class="hover:text-sky-blue-custom transition-colors">
                                 Finite Element Analysis Convergence <i class="fas fa-external-link-alt text-xs ml-1"></i>
                             </a>
                         </h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             A Coursera project focusing on mesh independence and convergence in finite element analysis.
                         </p>
                     </div>
@@ -449,23 +468,23 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Skill Category 1 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-cogs text-2xl text-blue-400"></i>
+                            <i class="fas fa-cogs text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">Simulation Software</h3>
                         </div>
-                        <ul class="list-disc list-inside space-y-2 text-slate-400">
+                        <ul class="list-disc list-inside space-y-2 text-slate-300">
                             <li>Ansys Fluent</li>
                             <li>OpenFOAM</li>
                         </ul>
                     </div>
                     <!-- Skill Category 2 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-code text-2xl text-blue-400"></i>
+                            <i class="fas fa-code text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">Programming Languages</h3>
                         </div>
-                        <ul class="list-disc list-inside space-y-2 text-slate-400">
+                        <ul class="list-disc list-inside space-y-2 text-slate-300">
                             <li>MATLAB</li>
                             <li>Python</li>
                             <li>C</li>
@@ -474,12 +493,12 @@
                         </ul>
                     </div>
                     <!-- Skill Category 3 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-drafting-compass text-2xl text-blue-400"></i>
+                            <i class="fas fa-drafting-compass text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">CAD & Processing</h3>
                         </div>
-                        <ul class="list-disc list-inside space-y-2 text-slate-400">
+                        <ul class="list-disc list-inside space-y-2 text-slate-300">
                             <li>SolidWorks</li>
                             <li>Fusion 360</li>
                             <li>ImageJ</li>
@@ -487,22 +506,22 @@
                         </ul>
                     </div>
                     <!-- Skill Category 4 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-chart-bar text-2xl text-blue-400"></i>
+                            <i class="fas fa-chart-bar text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">Scientific Visualization</h3>
                         </div>
-                        <ul class="list-disc list-inside space-y-2 text-slate-400">
+                        <ul class="list-disc list-inside space-y-2 text-slate-300">
                             <li>ParaView</li>
                         </ul>
                     </div>
                     <!-- Skill Category 5 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-file-alt text-2xl text-blue-400"></i>
+                            <i class="fas fa-file-alt text-2xl text-sky-blue-custom"></i>
                             <h3 class="text-xl font-semibold ml-4 text-white">Basic Software</h3>
                         </div>
-                        <ul class="list-disc list-inside space-y-2 text-slate-400">
+                        <ul class="list-disc list-inside space-y-2 text-slate-300">
                             <li>Microsoft Office Suite</li>
                             <li>Latex</li>
                         </ul>
@@ -519,59 +538,59 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Certification Card 1 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">ICT Division, Bangladesh</span>
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <span class="text-sm font-medium text-sky-blue-custom">ICT Division, Bangladesh</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">
                             Hands on Training Course for CNC & 3D Printing for Industrial Automation
                         </h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Under EDGE Course, ICT Division, Bangladesh.
                         </p>
-                        <a href="https://training.edge.gov.bd/certificate-validation" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors">
+                        <a href="https://training.edge.gov.bd/certificate-validation" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-sky-blue-custom hover:text-slate-400 transition-colors">
                             View Certificate <i class="fas fa-external-link-alt ml-1"></i>
                         </a>
                     </div>
                     <!-- Certification Card 2 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">Rutgers the State University of New Jersey</span>
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <span class="text-sm font-medium text-sky-blue-custom">Rutgers the State University of New Jersey</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">Supply Chain Management Specialization</h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Specialization in Logistics, Operation, Planning, Sourcing, and Management Strategy.
                         </p>
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/LRF4ENXJUFJV" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/LRF4ENXJUFJV" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-sky-blue-custom hover:text-slate-400 transition-colors">
                             View Certificate <i class="fas fa-external-link-alt ml-1"></i>
                         </a>
                     </div>
                     <!-- Certification Card 3 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">Coursera</span>
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <span class="text-sm font-medium text-sky-blue-custom">Coursera</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">Mechanical Engineering Design and Manufacturing with Fusion 360</h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Completed course on mechanical design and manufacturing using Fusion 360.
                         </p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/3NUW69AZ6DKR" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/3NUW69AZ6DKR" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-sky-blue-custom hover:text-slate-400 transition-colors">
                             View Certificate <i class="fas fa-external-link-alt ml-1"></i>
                         </a>
                     </div>
                     <!-- Certification Card 4 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">Coursera</span>
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <span class="text-sm font-medium text-sky-blue-custom">Coursera</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">Modeling and Design for Mechanical Engineers with Autodesk Fusion 360</h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Completed course on modeling and design principles for mechanical engineers.
                         </p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/MPTWGBG754MH" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/MPTWGBG754MH" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-sky-blue-custom hover:text-slate-400 transition-colors">
                             View Certificate <i class="fas fa-external-link-alt ml-1"></i>
                         </a>
                     </div>
                     <!-- Certification Card 5 -->
-                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <span class="text-sm font-medium text-blue-400">Georgia Institute of Technology (Coursera)</span>
+                    <div class="bg-slate-800 rounded-lg shadow-lg p-6 reveal transition-all duration-300 hover:ring-2 hover:ring-sky-blue-custom hover:-translate-y-1">
+                        <span class="text-sm font-medium text-sky-blue-custom">Georgia Institute of Technology (Coursera)</span>
                         <h3 class="text-lg font-semibold mt-2 text-white">Machine Design Part I</h3>
-                        <p class="text-slate-400 mt-2 text-sm text-justify">
+                        <p class="text-slate-300 mt-2 text-sm text-justify">
                             Completed course on the fundamentals of machine design from Georgia Tech.
                         </p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/5F6XHRPCX3TU" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/5F6XHRPCX3TU" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-sky-blue-custom hover:text-slate-400 transition-colors">
                             View Certificate <i class="fas fa-external-link-alt ml-1"></i>
                         </a>
                     </div>
@@ -589,10 +608,10 @@
                     <!-- Awards -->
                     <div class="reveal">
                         <h3 class="text-2xl font-semibold mb-6 flex items-center text-white">
-                            <i class="fas fa-award text-blue-400 mr-3"></i>
+                            <i class="fas fa-award text-sky-blue-custom mr-3"></i>
                             Awards
                         </h3>
-                        <ul class="space-y-4 text-slate-400">
+                        <ul class="space-y-4 text-slate-300">
                             <!-- Academic (Moved to top) -->
                             <li class="flex justify-between items-start">
                                 <span>Board Merit Scholarship with Rank 9th out of 261,528 students in 12th grade (Dinajpur Board).</span>
@@ -648,19 +667,36 @@
                         </ul>
                     </div>
 
-                    <!-- Activities -->
+                    <!-- Activities - Restructured for cleaner alignment -->
                     <div class="reveal">
                         <h3 class="text-2xl font-semibold mb-6 flex items-center text-white">
-                            <i class="fas fa-users text-blue-400 mr-3"></i>
+                            <i class="fas fa-users text-sky-blue-custom mr-3"></i>
                             Extra-Curricular Activities
                         </h3>
-                        <ul class="list-disc list-inside space-y-3 text-slate-400">
-                            <li><strong>Vice President</strong>, Association of CUETian Ex-Cadets (2023-2024)</li>
-                            <li><strong>Dance Secretary</strong>, Joyoddhoney (2023-2024)</li>
-                            <li><strong>Event Management Secretary</strong>, CUET Sports Club (2023-2024)</li>
-                            <li><strong>House Cultural Prefect</strong>, Rangpur Cadet College (2018-2019)</li>
-                            <li><strong>Lifetime Member</strong>, Rangpur Old Cadets' Association</li>
-                        </ul>
+                        <div class="space-y-3 text-slate-300">
+                            <!-- Adjusted formatting for tight grouping and right alignment -->
+                            <div class="flex justify-between items-start">
+                                <span><strong>Vice President</strong>, Association of CUETian Ex-Cadets</span>
+                                <span class="flex-shrink-0 ml-4 font-medium text-sm text-slate-500 text-right">2023-2024</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span><strong>Dance Secretary</strong>, Joyoddhoney</span>
+                                <span class="flex-shrink-0 ml-4 font-medium text-sm text-slate-500 text-right">2023-2024</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span><strong>Event Management Secretary</strong>, CUET Sports Club</span>
+                                <span class="flex-shrink-0 ml-4 font-medium text-sm text-slate-500 text-right">2023-2024</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span><strong>House Cultural Prefect</strong>, Rangpur Cadet College</span>
+                                <span class="flex-shrink-0 ml-4 font-medium text-sm text-slate-500 text-right">2018-2019</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span><strong>Lifetime Member</strong>, Rangpur Old Cadets' Association</span>
+                                <!-- Added empty span for alignment consistency -->
+                                <span class="flex-shrink-0 ml-4 font-medium text-sm text-slate-500 text-right"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -672,6 +708,7 @@
                     <p class="text-lg text-slate-400 mb-8 text-justify">
                         Beyond engineering, I'm passionate about dance. Check out my YouTube channel, "Chinmoy's Groove", to see my choreography and performances.
                     </p>
+                    <!-- Button remains vibrant, maybe adjust shadow/hover for light theme -->
                     <a href="https://www.youtube.com/@chinmoysgroove8851" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transition-all duration-300 text-lg">
                         Visit My Channel <i class="fab fa-youtube ml-2"></i>
                     </a>
@@ -688,11 +725,11 @@
 
                     <!-- Contact Info -->
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-10">
-                        <a href="https://www.linkedin.com/in/chinmoy-deb-nath-5829b4276" target="_blank" rel="noopener noreferrer" class="flex items-center text-slate-300 hover:text-blue-400 transition-colors">
+                        <a href="https://www.linkedin.com/in/chinmoy-deb-nath-5829b4276" target="_blank" rel="noopener noreferrer" class="flex items-center text-slate-300 hover:text-sky-blue-custom transition-colors">
                             <i class="fab fa-linkedin-in text-2xl w-6 text-center"></i>
                             <span class="ml-3 font-medium">LinkedIn</span>
                         </a>
-                        <a href="mailto:chinmoydebnathbishal@gmail.com" class="flex items-center text-slate-300 hover:text-blue-400 transition-colors">
+                        <a href="mailto:chinmoydebnathbishal@gmail.com" class="flex items-center text-slate-300 hover:text-sky-blue-custom transition-colors">
                             <i class="fas fa-envelope text-2xl w-6 text-center"></i>
                             <span class="ml-3 font-medium">Email</span>
                         </a>
@@ -707,14 +744,14 @@
         </div> <!-- End of sections wrapper -->
     </main>
 
-    <!-- ========== FOOTER ========== -->
+    <!-- ========== FOOTER - Background changed to dark slate-800 ========== -->
     <footer class="bg-slate-800 mt-24">
         <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-center text-slate-500">
             <div class="flex justify-center space-x-6 mb-4">
-                <a href="https://www.linkedin.com/in/chinmoy-deb-nath-5829b4276" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-colors" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/chinmoy-deb-nath-5829b4276" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-blue-custom transition-colors" title="LinkedIn">
                     <i class="fab fa-linkedin-in text-xl"></i>
                 </a>
-                <a href="mailto:chinmoydebnathbishal@gmail.com" class="text-slate-400 hover:text-blue-400 transition-colors" title="Email">
+                <a href="mailto:chinmoydebnathbishal@gmail.com" class="text-slate-400 hover:text-sky-blue-custom transition-colors" title="Email">
                     <i class="fas fa-envelope text-xl"></i>
                 </a>
             </div>
@@ -845,7 +882,7 @@
                 revealObserver.observe(el);
             });
 
-            // --- Particles.js Initialization ---
+            // --- Particles.js Initialization - Updated for custom Sky Blue theme ---
             if (typeof particlesJS !== 'undefined') {
                 particlesJS('particles-js', {
                     "particles": {
@@ -857,13 +894,13 @@
                             }
                         },
                         "color": {
-                            "value": "#60a5fa" // Blue-400
+                            "value": "#87CEEB" // Sky Blue Custom
                         },
                         "shape": {
                             "type": "circle",
                         },
                         "opacity": {
-                            "value": 0.5, // Increased from 0.3
+                            "value": 0.6, 
                             "random": false,
                             "anim": {
                                 "enable": false
@@ -879,8 +916,8 @@
                         "line_linked": {
                             "enable": true,
                             "distance": 150,
-                            "color": "#64748b", // Lightened from Slate-600 to Slate-500
-                            "opacity": 0.3, // Increased from 0.2
+                            "color": "#475569", // Slate-600 for subtle lines
+                            "opacity": 0.5, 
                             "width": 1
                         },
                         "move": {
@@ -909,7 +946,7 @@
                             "grab": {
                                 "distance": 140,
                                 "line_linked": {
-                                    "opacity": 0.5 // Increased from 0.3
+                                    "opacity": 0.7 // Increased grab opacity
                                 }
                             }
                         }
